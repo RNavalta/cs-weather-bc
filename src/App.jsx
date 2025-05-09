@@ -1,14 +1,21 @@
+
 import { useState } from 'react'
 import './App.css'
-import React from "react";
 import CitySelector from "./components/CitySelector";
 import Weathercast from "./components/Weathercast";
+import UnitToggle from "./components/UnitToggle";
 
 function App() {
+  // State to manage the selected city
   const [selectedCity, setSelectedCity] = useState("");
-
   const handleCityChange = (city) => {
     setSelectedCity(city);
+  };
+
+  // State to manage the selected unit (metric or imperial)
+  const [selectedUnit, setselectedUnit] = useState("metric"); // Default to Metric
+  const handleUnitToggle = (unit) => {
+    setselectedUnit(unit);
   };
 
   return (
@@ -19,7 +26,10 @@ function App() {
           <CitySelector onCityChange={handleCityChange}/>
           
           {/* Render WeatherCast */}
-          {selectedCity &&<Weathercast selectedCity={selectedCity} />} 
+          {selectedCity &&<Weathercast selectedCity={selectedCity} selectedUnit = {selectedUnit} />} 
+
+          {/* Render UnitToggle */}
+          <UnitToggle onToggle={handleUnitToggle} />
         </div>
       </div>
       

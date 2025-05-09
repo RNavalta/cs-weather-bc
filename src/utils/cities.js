@@ -1,3 +1,4 @@
+//List of cities in British Columbia, Canada
 export const bcCities = [ 
     "Vancouver, CA",
     "Victoria, CA",

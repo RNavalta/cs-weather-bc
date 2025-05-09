@@ -1,4 +1,4 @@
-import React from 'react';
+// This file displays the weather data in a card format using Material-UI components.
 import { Card, CardContent, Typography } from '@mui/material';
 
 const WeatherCard = ({
