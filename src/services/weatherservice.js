@@ -19,7 +19,6 @@ export const fetchWeatherData = async (city, unit) => {
     }
     return await response.json();
   } catch (error) {
-    console.error(error);
     throw error;
   }
 };

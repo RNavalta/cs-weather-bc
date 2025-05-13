@@ -1,10 +1,12 @@
 
-// The hook takes a city name and a unit (metric or imperial) as parameters and returns the weather data, loading state, and error message.
+
 import WeatherCard from "./WeatherCard";
 import useWeatherData from "../hooks/useWeatherData";
 
+// This component fetches and displays weather data for a selected city
 const WeatherCast = ({ selectedCity, selectedUnit}) => {
-  // Custom hook to fetch weather data
+  // Custom hook to fetch weather data.  It takes a city name and a unit (metric or imperial) as parameters
+  // and returns the weather data, loading state, and error message.
   const { weatherData, loading, error } = useWeatherData(selectedCity, selectedUnit);
 
   if (loading) {
