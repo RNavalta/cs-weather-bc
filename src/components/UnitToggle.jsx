@@ -1,5 +1,5 @@
 //This file uses Material-UI's Switch component to switch between metric and imperial units for weather data.
-import React, { useState } from "react";
+import { useState } from "react";
 import { FormControlLabel, Switch } from "@mui/material";
 
 const UnitToggle = ({ onToggle }) => {

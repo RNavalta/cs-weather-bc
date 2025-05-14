@@ -13,23 +13,25 @@ function App() {
   };
 
   // State to manage the selected unit (metric or imperial)
-  const [selectedUnit, setselectedUnit] = useState("metric"); // Default to Metric
+  const [selectedUnit, setSelectedUnit] = useState("metric"); // Default to Metric
   const handleUnitToggle = (unit) => {
-    setselectedUnit(unit);
+    setSelectedUnit(unit);
   };
 
   return (
     <>
       <div className="bg-green-200 min-h-screen flex flex-col">
         <div className=" bg-green-200 flex-grow flex flex-col items-center justify-center">
+          
           {/* Render CitySelector */}
           <CitySelector onCityChange={handleCityChange}/>
           
+           {/* Render UnitToggle */}
+          <UnitToggle onToggle={handleUnitToggle} />
+
           {/* Render WeatherCast */}
           {selectedCity &&<Weathercast selectedCity={selectedCity} selectedUnit = {selectedUnit} />} 
-
-          {/* Render UnitToggle */}
-          <UnitToggle onToggle={handleUnitToggle} />
+        
         </div>
       </div>
       

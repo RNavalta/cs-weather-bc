@@ -27,7 +27,7 @@ const WeatherCast = ({ selectedCity, selectedUnit}) => {
 
   // Render the WeatherCard component with the fetched weather data
   return (
-    <div style={{padding: "16px" }}> {/*padding around the card */}  
+    <div style={{padding: "10px" }}> {/*padding around the card */}  
       <WeatherCard className="bg-green-200 w-96 shadow-lg"
         temperature={`${weatherData.main.temp}${temperatureUnit}`}
         condition={weatherData.weather[0].description}
