@@ -21,7 +21,7 @@ A simple React app for viewing weather forecasts in British Columbia cities, wit
 ### Prerequisites
 
 - Node.js (v16 or higher recommended)
-- npm or yarn
+- npm 
 
 ### Installation
 
