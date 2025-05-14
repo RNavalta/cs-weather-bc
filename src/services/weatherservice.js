@@ -1,6 +1,6 @@
 //This file fetches weather data from the OpenWeatherMap API based on the selected city and unit (metric or imperial).
-const MET_URL = "http://api.openweathermap.org/data/2.5/weather?units=metric&q=";
-const IMP_URL = "http://api.openweathermap.org/data/2.5/weather?units=imperial&q=";
+const MET_URL = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
+const IMP_URL = "https://api.openweathermap.org/data/2.5/weather?units=imperial&q=";
 const API_KEY = import.meta.env.VITE_API_KEY;
 
 /**
